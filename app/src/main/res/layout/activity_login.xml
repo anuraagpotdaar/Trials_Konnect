@@ -3,7 +3,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    style="@style/SoftBackground"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/headerLogin"
+        style="@style/Heading"
+        android:layout_marginTop="50dp"
+        android:text="Uni Trials"
+        android:textColor="@color/Purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subHeaderLogin"
+        style="@style/Subheading"
+        android:text="Remote observations, increase participants retention rate and many more."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLogin" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        style="@style/Body.main"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="60dp"
+        android:text="Username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subHeaderLogin" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        style="@style/MyEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        style="@style/Body.main"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/MyEditText"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/PrimaryActionButton"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
