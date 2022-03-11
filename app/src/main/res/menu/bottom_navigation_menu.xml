@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="watch"
+        android:id="@+id/action_watch"
+        android:icon="@drawable/ic_watch"/>
+    <item android:title="home"
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="calendar"
+        android:id="@+id/action_calendar"
+        android:icon="@drawable/ic_calendar"/>
+</menu>
