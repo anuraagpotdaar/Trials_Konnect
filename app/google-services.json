@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "958505446129",
+    "firebase_url": "https://uni-trials-default-rtdb.firebaseio.com",
+    "project_id": "uni-trials",
+    "storage_bucket": "uni-trials.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958505446129:android:2d1161a514083b1b2dd750",
+        "android_client_info": {
+          "package_name": "com.anuraagpotdaar.trialskonnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958505446129-shfotpo4gjnmm11caoc3mfqaa1e4gj52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4GfcpPgfJxtJNvgexCZ4Z6aE9JPVIQQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958505446129-shfotpo4gjnmm11caoc3mfqaa1e4gj52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958505446129:android:80f6c1cc992fe4b32dd750",
+        "android_client_info": {
+          "package_name": "com.anuraagpotdaar.unitrials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958505446129-shfotpo4gjnmm11caoc3mfqaa1e4gj52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4GfcpPgfJxtJNvgexCZ4Z6aE9JPVIQQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958505446129-shfotpo4gjnmm11caoc3mfqaa1e4gj52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
