@@ -10,7 +10,7 @@
         android:id="@+id/headerLogin"
         style="@style/Heading"
         android:layout_marginTop="50dp"
-        android:text="Uni Trials"
+        android:text="Trials Konnect"
         android:textColor="@color/Purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +19,7 @@
     <TextView
         android:id="@+id/subHeaderLogin"
         style="@style/Subheading"
-        android:text="Remote observations, increase participants retention rate and many more."
+        android:text="Connect to your doctor instantly"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

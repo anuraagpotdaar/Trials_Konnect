@@ -18,10 +18,10 @@
     <TextView
         style="@style/Heading"
         android:layout_marginTop="20dp"
-        android:text="Uni Trials"
+        android:text="Trials Konnect"
+        android:textColor="@color/Purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:textColor="@color/Purple"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
