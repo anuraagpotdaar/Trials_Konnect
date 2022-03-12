@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MedsCalenderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/Body.main"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Back"
+            android:textColor="@color/Gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tcMonth"
+            style="@style/Heading"
+            android:layout_marginTop="20dp"
+            android:text="March"
+            android:textColor="@color/Purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBack" />
+
+        <TextView
+            android:id="@+id/tvDays"
+            style="@style/Heading"
+            android:layout_marginTop="10dp"
+            android:text="W\t\t\t\tT\t\t\t\tF\t\t\t\tS\t\t\t\tS\t\t\t\tM\t\t\t\tT"
+            android:textColor="@color/Gray"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcMonth" />
+
+        <TextView
+            android:id="@+id/tvDates"
+            style="@style/Heading"
+            android:layout_marginTop="10dp"
+            android:text="09\t\t\t10\t\t\t11\t\t\t12\t\t\t13\t\t\t14\t\t\t15"
+            android:textColor="@color/Gray"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDays" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDates" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
