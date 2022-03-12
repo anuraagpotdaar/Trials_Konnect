@@ -20,6 +20,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
+        bottomNavigationView.setSelectedItemId(R.id.action_home);
+
         replaceFragment(new DashboardFragment());
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override

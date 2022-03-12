@@ -12,7 +12,7 @@
         style="@style/Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="50dp"
         android:text="Device"
         android:textColor="@color/Purple"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,21 +31,22 @@
 
     <ImageView
         android:id="@+id/image1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/Purple"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_battery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text2" />
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:tint="@color/Purple" />
 
     <TextView
         android:id="@+id/text3"
         style="@style/Subheading"
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="80%"
+        android:textColor="@color/Black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image1" />
@@ -55,23 +56,77 @@
         android:id="@+id/text4"
         style="@style/Subheading"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="2 Days Remaining"
+        android:textColor="@color/Black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text3" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Subheading"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Other devices"
+        android:textColor="@color/Black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Samsung S Watch"
+        style="@style/Body.main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        android:text="Mi band 5"
+        style="@style/Body.main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text4" />
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/Body.child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:text="Not in range"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        style="@style/Body.child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:text="Not in range"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

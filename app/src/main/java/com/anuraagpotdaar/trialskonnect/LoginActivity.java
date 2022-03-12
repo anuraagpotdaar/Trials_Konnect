@@ -54,8 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                         edt_password.setError(null);
                         Toast.makeText(LoginActivity.this, "Success"+nameFromDatabase, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
-
-
+                        intent.putExtra("selected participant",userEnterdUsername);
                         startActivity(intent);
                         finish();
                     }else {
