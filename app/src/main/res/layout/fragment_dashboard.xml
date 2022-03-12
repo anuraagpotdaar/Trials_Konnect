@@ -152,7 +152,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tvHRValue"
                 style="@style/Body.main"
 
                 android:layout_marginTop="10dp"
@@ -172,7 +172,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/tvHRValue" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -196,7 +196,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tvOxyVal"
                 style="@style/Body.main"
                 android:layout_marginTop="10dp"
                 android:text="96%"
@@ -215,7 +215,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toBottomOf="@+id/tvOxyVal" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -247,7 +247,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tvBPVal"
                 style="@style/Body.main"
                 android:layout_marginTop="10dp"
                 android:text="100 mm Hg"
@@ -266,7 +266,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/tvBPVal" />
 
             <ImageView
                 android:id="@+id/imageView4"
