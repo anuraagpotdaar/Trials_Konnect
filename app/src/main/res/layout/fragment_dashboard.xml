@@ -13,8 +13,12 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/White"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_settings"
+        android:scaleType="fitXY"
+        android:padding="15dp"
+        android:adjustViewBounds="true"
+        android:background="@color/SmokeWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"
-        android:text="john Doe"
+        android:text="John Doe"
         android:textColor="@color/Purple"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/image1" />
@@ -43,7 +47,7 @@
     <TextView
         android:id="@+id/textView3"
         style="@style/Subheading"
-        android:text="Day 7 trial of"
+        android:text="Day 7 of trial"
         android:textColor="@color/Black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView2" />
@@ -89,7 +93,7 @@
                 android:id="@+id/textView12"
                 style="@style/Body.child"
                 android:layout_marginStart="15dp"
-                android:text="Paracetmol * 1 "
+                android:text="Paracetamol x 1 "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -278,7 +282,7 @@
 
     <Button
         style="@style/PrimaryActionButton"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_marginBottom="60dp"
         android:text="Add Symptoms"
         app:layout_constraintBottom_toBottomOf="parent"
