@@ -31,15 +31,16 @@ public class DashboardFragment extends Fragment {
         View view = binding.getRoot();
         // Inflate the layout for this fragment
 
-        binding.cardView.setOnClickListener(view1 -> {
-            replaceFragment();
+        binding.cardView.setOnClickListener(view1 -> replaceFragment());
+        binding.cardView1.setOnClickListener(view1 -> replaceFragment());
+        binding.cardView2.setOnClickListener(view1 -> replaceFragment());
 
-        });
-        binding.cardView1.setOnClickListener(view1 -> {
-            replaceFragment();
-        });
-        binding.cardView2.setOnClickListener(view1 -> {
-            replaceFragment();
+        binding.cardView3.setOnClickListener(view12 -> {
+            Fragment medsFrag = new MedsCalenderFragment();
+            FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+            transaction.replace(R.id.home_frame, medsFrag);
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
 
 
@@ -49,8 +50,8 @@ public class DashboardFragment extends Fragment {
     private void replaceFragment (){
         Fragment healthDataFrag = new ParticipantHelthInfoFragment();
         FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-        transaction.replace(R.id.home_frame, healthDataFrag); // give your fragment container id in first parameter
-        transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
+        transaction.replace(R.id.home_frame, healthDataFrag);
+        transaction.addToBackStack(null);
         transaction.commit();
     }
 
